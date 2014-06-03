@@ -40,7 +40,7 @@ CFLAGS			+=	-std=gnu99 -Wall
 CFLAGS			+=	-O$(OPTIMIZE)
 
 # Linker
-LDFLAGS			=	$(FLAGS)
+LDFLAGS			=	$(FLAGS) -lpthread
 
 .PHONY: all clean
 .PRECIOUS: $(OBJ)
